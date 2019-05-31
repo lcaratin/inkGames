@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLogin">
+    <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+    </padding>
+   <bottom>
+      <AnchorPane prefHeight="460.0" prefWidth="394.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="74.0" fitWidth="164.0" layoutX="115.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="372.08451080322266" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@../resources/Logo.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txt_NomeEmail" layoutX="75.0" layoutY="166.0" prefHeight="28.0" prefWidth="245.0" stylesheets="@../Stylesheets/TextField.css" />
+            <PasswordField fx:id="txt_Senha" layoutX="75.0" layoutY="226.0" prefHeight="28.0" prefWidth="245.0" stylesheets="@../Stylesheets/TextField.css" />
+            <Label layoutX="76.0" layoutY="145.0" text="Email ou Nome do perfil" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="205.0" text="Senha" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="15.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="cb_LembrarSenha" layoutX="76.0" layoutY="276.0" mnemonicParsing="false" stylesheets="@../Stylesheets/CheckBox.css" text="Lembrar minha senha" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="14.0" />
+               </font>
+            </CheckBox>
+            <Button layoutX="75.0" layoutY="312.0" mnemonicParsing="false" onAction="#LoginClick" prefHeight="30.0" prefWidth="245.0" style="-fx-background-color: #ff1f5f; -fx-background-radius: 30;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="75.0" layoutY="380.0" mnemonicParsing="false" onAction="#SignUpClick" prefHeight="30.0" prefWidth="245.0" style="-fx-background-radius: 30; -fx-background-color: #ffb330;" text="Criar Conta" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#ComponentClick" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerStoreGame">
+   <top>
+      <ImageView fitHeight="280.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <image>
+            <Image url="@../resources/Thumbs/Minecraft.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+   </top>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+   <bottom>
+      <HBox alignment="TOP_RIGHT" prefHeight="44.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="34.0" prefWidth="80.0" style="-fx-background-color: #ffb330;">
+               <center>
+                  <Label fx:id="txt_Preco" minHeight="-Infinity" prefHeight="34.0" prefWidth="75.0" text="R$ 100,00" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </center>
+            </BorderPane>
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding></HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="txt_Nome" prefHeight="28.0" prefWidth="308.0" text="Nome Jogo" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_Desc" alignment="TOP_LEFT" layoutX="20.0" layoutY="20.0" lineSpacing="1.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus ligula non arcu euismod porta. Ut viverra semper lectus, sed fringilla arcu. Praesent egestas ipsum vel tellus accumsan mollis. Etiam nec varius nisl. Fusce sit amet elementum eros, quis tempor enim. Nulla enim lectus, vestibulum vel volutpat ac, imperdiet vel enim. " textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semilight" size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

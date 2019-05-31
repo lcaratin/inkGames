@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1268.0" prefWidth="874.0" style="-fx-background-color: #5d5d5d;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerGamePage">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+   <top>
+      <ImageView fitHeight="399.0" fitWidth="870.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../resources/Thumbs/Celeste.png" />
+         </image></ImageView>
+   </top>
+   <center>
+      <HBox prefHeight="48.0" prefWidth="854.0" style="-fx-background-color: #262626;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="txt_Nome" prefHeight="94.0" prefWidth="603.0" text="Nome Jogo" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Segoe UI Historic" size="31.0" />
+               </font></Label>
+            <Button mnemonicParsing="false" onMouseClicked="#OrderGameClick" prefHeight="64.0" prefWidth="252.0" style="-fx-background-color: #ff1f5f;">
+               <graphic>
+                  <Label fx:id="txt_Preco" text="Comprar R$ 50,00" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI" size="22.0" />
+                     </font>
+                  </Label>
+               </graphic></Button>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="968.0" prefWidth="854.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="39.0" text="Categoria" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="67.0" text="Detalhes" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="txt_Desc" alignment="TOP_LEFT" layoutX="14.0" layoutY="114.0" prefHeight="296.0" prefWidth="836.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit porttitor aliquet. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris hendrerit eget massa ac mattis. Ut id tortor eu lectus pellentesque tincidunt non a ipsum. Nunc non rutrum lorem. Integer ut semper purus. Sed venenatis velit nunc, ut ultricies tortor sodales id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque gravida metus nec tortor mollis imperdiet. Morbi condimentum dolor varius pharetra gravida. Aenean sed porta lorem, ac ultricies mauris. Proin nec lacinia est.Phasellus efficitur vitae nunc id maximus. Phasellus et varius urna. Cras ac mauris nec enim dapibus rhoncus eu sed justo. Nam a dignissim diam. Pellentesque convallis eu mauris a lobortis. Praesent sed luctus libero. Nunc facilisis volutpat arcu, at ultrices risus blandit sit amet. Sed rhoncus sollicitudin enim vel sagittis. Phasellus sodales felis id malesuada condimentum. Nunc egestas ipsum ac turpis laoreet egestas. Donec facilisis ante vitae ante mattis fringilla." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Light" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="466.0" text="Nova Avaliação" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_Comentario" layoutX="20.0" layoutY="515.0" prefHeight="40.0" prefWidth="766.0" stylesheets="@../Stylesheets/TextField.css" />
+            <Label layoutX="18.0" layoutY="594.0" text="Avaliação dos usuários" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="25.0" />
+               </font>
+            </Label>
+            <BorderPane layoutX="18.0" layoutY="651.0" prefHeight="64.0" prefWidth="64.0" style="-fx-border-color: #fff; -fx-border-width: 5; -fx-border-radius: 2;">
+               <center>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../resources/avatar.jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+            </BorderPane>
+            <Button fx:id="btn_Comentario" layoutX="791.0" layoutY="513.0" mnemonicParsing="false" onMouseClicked="#AvalClick" prefHeight="42.0" prefWidth="50.0" style="-fx-background-color: #ffb330;" text="+" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Black" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="txt_ComentarioBanco" alignment="TOP_LEFT" layoutX="106.0" layoutY="644.0" prefHeight="273.0" prefWidth="734.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pretium aliquam est, eget sodales dui consequat sed. Donec ex nisl, porta at lorem sed, cursus ullamcorper nisi. Phasellus cursus enim lorem, eu facilisis enim aliquet ac. Vestibulum ullamcorper nibh lectus, eget consequat eros mollis ac. Etiam sagittis, nunc ut faucibus consectetur, ipsum libero congue lorem, eu egestas dui ligula in velit. Donec felis ipsum, dapibus eget consectetur quis, tempor quis est. Mauris vitae risus lobortis, maximus sapien eget, dapibus mauris. Maecenas et iaculis ante. Ut placerat volutpat ipsum, in convallis mauris luctus sed. Donec tempor dui lacus, ut cursus quam faucibus non. Proin at magna scelerisque, finibus purus vitae, dictum quam." textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Light" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="702.0" layoutY="393.0" text="Mostrar mais" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="702.0" layoutY="917.0" text="Mostrar mais" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="24.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>

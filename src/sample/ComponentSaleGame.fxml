@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="200.0" prefWidth="420.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerSaleGame">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="420.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="420.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="420.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../resources/Thumbs/Minecraft.jpg" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </children>
+            </Pane>
+            <HBox alignment="TOP_RIGHT" layoutY="160.0" prefHeight="47.0" prefWidth="420.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+               <children>
+                  <AnchorPane prefHeight="50.0" prefWidth="256.0" style="-fx-background-color: rgba(0,0,0,0.5);">
+                     <children>
+                        <Label layoutX="1.0" layoutY="4.0" prefHeight="42.0" prefWidth="225.0" text="Nome Jogo" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Historic" size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <BorderPane fx:id="bdp_OldPrice" prefHeight="50.0" prefWidth="82.0" style="-fx-background-color: #ffb330;" />
+                  <BorderPane prefHeight="50.0" prefWidth="82.0" style="-fx-background-color: #ff1f5f;">
+                     <center>
+                        <Label minHeight="-Infinity" prefHeight="34.0" prefWidth="63.0" text="R$ 50,00" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Segoe UI Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </center>
+                  </BorderPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

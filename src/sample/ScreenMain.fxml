@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="systemPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerMain">
+    <left>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #262626;" BorderPane.alignment="CENTER">
+            <top>
+                <Pane prefHeight="123.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="70.0" fitWidth="151.0" layoutX="6.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../resources/Logo.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </top>
+            <bottom>
+                <VBox prefHeight="113.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane prefHeight="50.0">
+                            <children>
+                                <Label blendMode="DIFFERENCE" layoutX="86.0" layoutY="9.0" onMouseClicked="#ProfileClick" prefWidth="150.0" text="PERFIL" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font name="Segoe UI Historic" size="16.0" />
+                                    </font>
+                                </Label>
+                                <ImageView blendMode="DIFFERENCE" fitHeight="20.0" fitWidth="20.0" layoutX="-65.0" layoutY="-50.0" onMouseClicked="#ProfileClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="15.0">
+                                    <image>
+                                        <Image url="@../resources/Icons/Profile.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="50.0">
+                            <children>
+                                <Label blendMode="DIFFERENCE" layoutX="86.0" layoutY="17.0" onMouseClicked="#LogOutClick" text="SAIR" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font name="Segoe UI Historic" size="16.0" />
+                                    </font>
+                                </Label>
+                                <ImageView blendMode="DIFFERENCE" fitHeight="20.0" fitWidth="20.0" layoutX="-65.0" layoutY="-50.0" onMouseClicked="#LogOutClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="15.0">
+                                    <image>
+                                        <Image url="@../resources/Icons/Logout.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </bottom>
+            <center>
+                <VBox prefHeight="314.0" prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <AnchorPane prefHeight="50.0">
+                            <children>
+                                <Label blendMode="DIFFERENCE" layoutX="86.0" layoutY="17.0" onMouseClicked="#HighlightsClick" text="DESTAQUES" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font name="Segoe UI Historic" size="16.0" />
+                                    </font>
+                                </Label>
+                                <ImageView blendMode="DIFFERENCE" fitHeight="20.0" fitWidth="20.0" layoutX="-65.0" layoutY="-50.0" onMouseClicked="#HighlightsClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="15.0">
+                                    <image>
+                                        <Image url="@../resources/Icons/Home.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <Label blendMode="DIFFERENCE" layoutX="86.0" layoutY="17.0" onMouseClicked="#StoreClick" text="CATÁLOGO" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font name="Segoe UI Historic" size="16.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="img_CatalogoIcon" blendMode="DIFFERENCE" fitHeight="20.0" fitWidth="20.0" layoutX="-65.0" layoutY="-50.0" onMouseClicked="#StoreClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="15.0">
+                                    <image>
+                                        <Image url="@../resources/Icons/Showcase.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="10.0" layoutY="75.0" prefHeight="50.0" prefWidth="200.0">
+                            <children>
+                                <Label blendMode="DIFFERENCE" layoutX="86.0" layoutY="17.0" onMouseClicked="#LibraryClick" text="BIBLIOTECA" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <font>
+                                        <Font name="Segoe UI Historic" size="16.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="img_BibliotecaIcon" blendMode="DIFFERENCE" fitHeight="20.0" fitWidth="20.0" layoutX="-65.0" layoutY="-50.0" onMouseClicked="#LibraryClick" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="145.0" AnchorPane.topAnchor="15.0">
+                                    <image>
+                                        <Image url="@../resources/Icons/Library.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </left>
+    <center>
+        <BorderPane style="-fx-background-color: #262626;" BorderPane.alignment="TOP_CENTER">
+            <center>
+                <ScrollPane fx:id="mainPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" style="-fx-background: #303030; -fx-background-color: transparent;" stylesheets="@../Stylesheets/ScrollPane.css" BorderPane.alignment="TOP_CENTER">
+                    <BorderPane.margin>
+                        <Insets />
+                    </BorderPane.margin></ScrollPane>
+            </center>
+            <padding>
+                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+            </padding></BorderPane>
+    </center>
+    <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+    </padding>
+</BorderPane>

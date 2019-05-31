@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerProfileCompany">
+    <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+    </padding>
+   <center>
+      <Pane prefHeight="594.0" prefWidth="733.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="70.0" layoutY="176.0" text="Razão Social" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="214.0" layoutY="173.0" prefHeight="28.0" prefWidth="205.0" stylesheets="@../Stylesheets/TextField.css" />
+            <Label layoutX="70.0" layoutY="221.0" text="Nome Fantasia" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="214.0" layoutY="218.0" prefHeight="28.0" prefWidth="205.0" stylesheets="@../Stylesheets/TextField.css" />
+            <PasswordField layoutX="206.0" layoutY="394.0" prefHeight="28.0" prefWidth="205.0" stylesheets="@../Stylesheets/TextField.css" />
+            <Line endX="800.0" endY="370.0" startX="20.0" startY="370.0" stroke="WHITE" />
+            <Label layoutX="70.0" layoutY="397.0" text="Senha atual" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="15.0" />
+               </font>
+            </Label>
+            <PasswordField layoutX="206.0" layoutY="439.0" prefHeight="28.0" prefWidth="205.0" stylesheets="@../Stylesheets/TextField.css" />
+            <Label layoutX="70.0" layoutY="442.0" text="Senha nova" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="15.0" />
+               </font>
+            </Label>
+            <PasswordField layoutX="206.0" layoutY="483.0" prefHeight="28.0" prefWidth="205.0" stylesheets="@../Stylesheets/TextField.css" />
+            <Label layoutX="70.0" layoutY="486.0" text="Confirmar senha" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="2.0" prefHeight="60.0" prefWidth="233.0" text="Editar Perfil da Empresa" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="266.0" text="E-mail" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="66.0" layoutY="541.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="139.0" style="-fx-background-color: #ff1f5f; -fx-background-radius: 30;" text="Salvar" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="14.0" />
+               </font>
+            </Button>
+            <Line endX="1.0" endY="580.0" layoutX="1.0" layoutY="5.0" startX="1.0" startY="1.0" stroke="SILVER" />
+            <BorderPane layoutX="70.0" layoutY="62.0" prefHeight="89.0" prefWidth="89.0" style="-fx-border-color: #fff; -fx-border-width: 5; -fx-border-radius: 5;">
+               <center>
+                  <ImageView fitHeight="84.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../resources/avatar.jpg" />
+                     </image>
+                  </ImageView>
+               </center></BorderPane>
+            <Label layoutX="42.0" layoutY="338.0" text="Trocar senha" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Historic" size="20.0" />
+               </font>
+            </Label>
+            <TextField layoutX="142.0" layoutY="263.0" prefHeight="28.0" prefWidth="278.0" stylesheets="@../Stylesheets/TextField.css" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

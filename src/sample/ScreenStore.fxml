@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.FlowPane?>
+
+<FlowPane fx:id="fpn_Store" alignment="TOP_CENTER" columnHalignment="CENTER" hgap="26.0" onMouseClicked="#StoreClick" vgap="26.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerStore">
+   <padding>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="26.0" />
+   </padding>
+</FlowPane>

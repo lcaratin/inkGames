@@ -1,2 +1,0 @@
-# inkGames
-Projeto LP-II
